@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/get', "ApiController@getData");
+Route::post('/post', "ApiController@postData");
