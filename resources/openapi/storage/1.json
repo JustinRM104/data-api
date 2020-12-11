@@ -1,0 +1,14 @@
+{
+    "conf": {
+        "db_id": "1",
+        "db_name": "test database",
+        "db_key": "efuihgkewjhkjhewiu3iy4iu3ewjge12ygukdfbkewg",
+        
+        "get_key": "532482349",
+        "post_key": "3278253",
+        "delete_key": "3279532355325",
+
+        "trusted_sources": {}
+    },
+    "stored_data": {}
+}

@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:api', 'throttle:60,1')->group(function () {
+    Route::get('/user', function () {
+        echo "test";
+    });
+    Route::get('/get', 'ApiController@get')->name('api.get');
 });
+
+//Route::get('/get/{db_id}/{db_key}/{method_key}', 'ApiController@get')->name('api.get');
+
+
+// iedere database van een user heeft een geheime code, alleen met die code kan de database worden aangepast.
+// daarbij 

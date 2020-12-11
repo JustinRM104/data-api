@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class ApiController extends Controller
 {
-    public function get($user_secret_code, $db_code) {
-        return "Getting data  user_secret: $user_secret_code db_code: $db_code";
-    }
-    public function post($user_secret_code, $db_code) {
-        return "Posting data";
+    public function get() {
+        echo "test";
+        //$string = file_get_contents(asset('openapi/storage/1.json'));   
+        //$json_file = json_decode($string, true);
+        //echo $json_file;
     }
 }
